@@ -1,7 +1,18 @@
-const setBg = () => {
-    const randomColor = Math. floor(Math. random()*16777215). toString(16);
-    document. body. style. backgroundColor = "#" + randomColor;
-    color. innerHTML = "#" + randomColor;
-    }
-    genNew. addEventListener("click", setBg);
-    setBg();
+function changeColor(color) {
+    document.body.style.background = color;
+}
+function Button1() {
+    changeColor('greenyellow');
+}
+function Button2() {
+    changeColor('yellow');
+}
+function Button3() {
+    changeColor('blue');
+}
+function Button4() {
+    changeColor('red');
+}
+function Button5() {
+    changeColor('hotpink');
+}
