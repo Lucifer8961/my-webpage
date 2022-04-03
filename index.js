@@ -1,18 +1,12 @@
-function changeColor(color) {
-    document.body.style.background = color;
-}
-function Button1() {
-    changeColor('greenyellow');
-}
-function Button2() {
-    changeColor('yellow');
-}
-function Button3() {
-    changeColor('blue');
-}
-function Button4() {
-    changeColor('red');
-}
-function Button5() {
-    changeColor('hotpink');
-}
+
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+ console.log(bgColor);
+  
+    document.body.style.background = bgColor;
+    }
+
+random_bg_color();
